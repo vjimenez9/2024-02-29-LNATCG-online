@@ -13,9 +13,9 @@ humandate: "Feb 29 - Mar 1, 2024"    # human-readable dates for the workshop (e.
 humantime: "9:00 am - 6:30 pm UTC-6"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2024-02-29      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2024-03-1        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Alejandro Sánchez", "Jérôme Verleyen", "karel J. Estrada", "Leslie Matias", "Verónica Jiménez"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Karina Verdel Aranda", "Gabriel Alarcon Carranza", "Sonia Dávila Ramos"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["uusmb@ibt.unam.mx"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+instructor: ["Alejandro Sánchez", "Jérôme Verleyen", "Karel J. Estrada", "Leslie Matias", "Verónica Jiménez"] 
+helper: ["Karina Verdel Aranda", "Gabriel Alarcon Carranza", "Sonia Dávila Ramos"]     
+email: ["uusmb@ibt.unam.mx"]    
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:   # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -338,13 +338,10 @@ of code below the Schedule `<h2>` header below with
 `{% include custom-schedule.html %}`.
 {% endcomment %}
 
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule">Programación</h2>
 
 {% if site.carpentry == "swc" %}
 {% include custom-schedule.html %}
-{% comment %}
-{% include swc/schedule.html %}
-{% endcomment %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
