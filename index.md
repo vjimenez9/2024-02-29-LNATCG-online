@@ -15,9 +15,9 @@ startdate: 2024-02-29      # machine-readable start date for the workshop in YYY
 enddate: 2024-03-1        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Alejandro Sánchez", "Jérôme Verleyen", "karel J. Estrada", "Leslie Matias", "Verónica Jiménez"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Karina Verdel Aranda", "Gabriel Alarcon Carranza", "Sonia Dávila Ramos"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["first@example.org","second@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+email: ["uusmb@ibt.unam.mx"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite: LNATCG2024         # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 
@@ -121,8 +121,8 @@ workshop is only open to people from a particular institution.
 </p>
 {% elsif online == "true_private" %}
 <p id="where">
-  <strong>Where:</strong> Esta formación se realizará online.
-  Los instructores le proporcionarán la información que necesitará para conectarse a esta reunión.
+  <strong>Donde:</strong> Esta formación se realizará online.
+  Los instructores le proporcionarán  una liga de zoom con la información que necesitará para conectarse a esta reunión, via el correo electronico con el que se registre
 </p>
 {% endif %}
 
@@ -190,8 +190,8 @@ special instructions.
   Sin embargo, queremos ayudar a crear una experiencia inclusiva y accesible para todos los participantes.
   Le animamos a compartir cualquier información que pueda resultar útil para que su experiencia en Carpentries sea accesible.
   Para solicitar una adaptación para este taller, complete el formulario
-  <a href="https://carpentries.typeform.com/to/B2OSYaD0">formulario de solicitud de alojamiento</a>.
-  Si tiene preguntas o necesita ayuda con el formulario de alojamiento, <a href="mailto:team@carpentries.org">envíenos un correo electrónico</a>.
+  <a href="https://carpentries.typeform.com/to/B2OSYaD0">formulario de solicitud de adaptación</a>.
+  Si tiene preguntas o necesita ayuda con el formulario de adaptacion, <a href="mailto:team@carpentries.org">envíenos un correo electrónico</a>.
   
 </p>
 {% endif %}
@@ -202,8 +202,8 @@ CONTACT EMAIL ADDRESS
 Display the contact email address set in the configuration file.
 {% endcomment %}
 <p id="contact">
-  <strong>Contact:</strong>
-  Please email
+  <strong>Contacto:</strong>
+  email
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
@@ -288,7 +288,8 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 </p>
 <hr/>
 {% endif %}
-
+<h2> Notas colaborativas</h2>
+Nosotros usaremos <a href="https://docs.google.com/document/d/1NPQnXExND9goc_JWZgXrNB0JPjDY1jpN06-cfIVRiUc/edit?usp=sharing"> Notas de Clase </a>
 
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
