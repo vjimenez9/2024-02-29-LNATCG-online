@@ -95,15 +95,6 @@ workshop is only open to people from a particular institution.
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
 {% endif %}
-
-{% comment %}
-LOCATION
-
-This block displays the address and links to maps showing directions
-if the latitude and longitude of the workshop have been set.  You
-can use https://www.latlong.net/ to find the lat/long of an
-address.
-{% endcomment %}
 {% assign begin_address = page.address | slice: 0, 4 | downcase  %}
 {% if page.address == "online" %}
 {% assign online = "true_private" %}
@@ -114,7 +105,7 @@ address.
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
 <p id="where">
-  <strong>Where:</strong>
+  <strong>Donde:</strong>
   {{page.address}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
@@ -123,15 +114,15 @@ address.
 </p>
 {% elsif online == "true_public" %}
 <p id="where">
-  <strong>Where:</strong>
+  <strong>Donde:</strong>
   online at <a href="{{page.address}}">{{page.address}}</a>.
-  If you need a password or other information to access the training,
-  the instructor will pass it on to you before the workshop.
+  Si necesita una contraseña u otra información para acceder a la capacitación,
+  el instructor te lo pasará antes del taller.
 </p>
 {% elsif online == "true_private" %}
 <p id="where">
-  <strong>Where:</strong> This training will take place online.
-  The instructors will provide you with the information you will need to connect to this meeting.
+  <strong>Where:</strong> Esta formación se realizará online.
+  Los instructores le proporcionarán la información que necesitará para conectarse a esta reunión.
 </p>
 {% endif %}
 
@@ -142,7 +133,7 @@ This block displays the date and links to Google Calendar.
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong>
+  <strong>cuando:</strong>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
