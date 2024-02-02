@@ -20,21 +20,6 @@ collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g.
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
-{% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
-
-{% comment %}
-HEADER
-
-Edit the values in the block above to be appropriate for your workshop.
-If the value is not 'true', 'false', 'null', or a number, please use
-double quotation marks around the value, unless specified otherwise.
-And run 'make workshop-check' *before* committing to make sure that changes are good.
-{% endcomment %}
-
-
-{% comment %}
-Check DC curriculum
-{% endcomment %}
 
 {% if site.carpentry == "dc" %}
 {% unless site.curriculum == "dc-astronomy" or site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-geospatial" or site.curriculum == "dc-image" or site.curriculum == "dc-socsci" %}
@@ -44,9 +29,6 @@ It looks like you are setting up a website for a Data Carpentry curriculum but y
 {% endunless %}
 {% endif %}
 
-{% comment %}
-Check SWC curriculum
-{% endcomment %}
 
 {% if site.carpentry == "swc" %}
 {% unless site.curriculum == "swc-inflammation" or site.curriculum == "swc-gapminder" %}
@@ -79,23 +61,13 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="general">General Information</h2>
 
-{% comment %}
-INTRODUCTION
-
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
-
 <p>
-<strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
-href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
-<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
-helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers.
+<strong><a href="https://carpentries.org">The Carpentries</a></strong> comprende las comunidades de instructores, formadores, mantenedores, ayudantes y partidarios de <a
+href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, y
+<a href="{{site.lc_site}}">Library Carpentry</a> que comparten la misión de enseñar habilidades básicas de computación y ciencia de datos a los investigadores.
 <p align="center">
   <em>
-  <strong>Want to learn more and stay engaged with The Carpentries?</strong> Carpentries Clippings is The Carpentries' biweekly newsletter, where we share community news, community job postings, and more.
-Sign up to receive future editions and read our full archive: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
+  <strong>¿Quiere obtener más información y seguir interactuando con The Carpentries? Carpentries Clippings es el boletín quincenal de The Carpentries, donde compartimos noticias de la comunidad, ofertas de trabajo de la comunidad y más. Regístrese para recibir ediciones futuras y leer nuestro archivo completo:: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
   </em>
 </p>
 {% if site.carpentry == "swc" %}
