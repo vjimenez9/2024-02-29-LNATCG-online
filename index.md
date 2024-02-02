@@ -150,10 +150,12 @@ Modify the block below if there are any special requirements.
     Participants must bring a laptop with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% else %}
-    Los participantes deben tener acceso a una computadora con
-    Sistema operativo Mac, Linux o Windows (no una tableta, Chromebook, etc.) con privilegios de administracion.
+    Los participantes deben tener acceso a una computadora con <\br>
+    - Sistema operativo Mac, Linux o Windows (no una tableta, Chromebook, etc.) con privilegios de administracion. <\br> 
+    - También es recomendable una velocidad de conexion a internet de al menos 3M  (esto lo puede verificar en https://www.speedtest.net/ ) <\br>
+    - zoom para las videoconferencias,  con su nombre completo definido como usuario al momento de conectarse a la sesión <\br>
   {% endif %}
-  Deben tener ademas, acceso a una terminal y tener instalado python y como sugerencia visual code (instrucciones  <a href="#setup">abajo</a>).
+    - Deben tener ademas, acceso a una terminal y tener instalado python y como sugerencia visual code (instrucciones  <a href="#setup">abajo</a>).
 </p>
 
 {% comment %}
