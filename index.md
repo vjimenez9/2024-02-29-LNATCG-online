@@ -145,15 +145,15 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong>
+  <strong>Requerimientos:</strong>
   {% if online == "false" %}
     Participants must bring a laptop with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% else %}
-    Participants must have access to a computer with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+    Los participantes deben tener acceso a una computadora con
+    Sistema operativo Mac, Linux o Windows (no una tableta, Chromebook, etc.) con privilegios de administracion.
   {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  Deben tener ademas, acceso a una terminal y tener instalado python y como sugerencia visual code (instrucciones  <a href="#setup">abajo</a>).
 </p>
 
 {% comment %}
@@ -163,7 +163,7 @@ Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
 <p id="accessibility">
-  <strong>Accessibility:</strong>
+  <strong>Accessibilidad:</strong>
 {% if online == "false" %}
   We are committed to making this workshop
   accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
