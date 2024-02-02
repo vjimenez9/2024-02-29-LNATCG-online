@@ -66,7 +66,7 @@ displayed if the 'eventbrite' field in the header is not set.
 href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, y
 <a href="{{site.lc_site}}">Library Carpentry</a> que comparten la misión de enseñar habilidades básicas de computación y ciencia de datos a los investigadores.
 <p align="center">
-  <strong>¿Quiere obtener más información y seguir interactuando con The Carpentries? Carpentries Clippings es el boletín quincenal de The Carpentries, donde compartimos noticias de la comunidad, ofertas de trabajo de la comunidad y más. Regístrese para recibir ediciones futuras y leer nuestro archivo completo:: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
+  <strong>¿Quiere obtener más información y seguir interactuando con The Carpentries? </strong> Carpentries Clippings es el boletín quincenal de The Carpentries, donde compartimos noticias de la comunidad, ofertas de trabajo de la comunidad y más. <br> Regístrese para recibir ediciones futuras y leer nuestro archivo completo: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
 </p>
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
