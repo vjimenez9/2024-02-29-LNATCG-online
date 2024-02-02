@@ -203,7 +203,7 @@ Display the contact email address set in the configuration file.
 {% endcomment %}
 <p id="contact">
   <strong>Contacto:</strong>
-  email
+  escriba al email
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
@@ -218,7 +218,7 @@ Display the contact email address set in the configuration file.
   {% else %}
   to-be-announced
   {% endif %}
-  for more information.
+  para mas información o llene nuestra   <a href="https://forms.gle/bcZ2KYfmyJGvSqLt5">Solicitud de inscripción</a>
 </p>
 
 
