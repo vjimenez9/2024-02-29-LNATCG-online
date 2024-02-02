@@ -66,9 +66,7 @@ displayed if the 'eventbrite' field in the header is not set.
 href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, y
 <a href="{{site.lc_site}}">Library Carpentry</a> que comparten la misión de enseñar habilidades básicas de computación y ciencia de datos a los investigadores.
 <p align="center">
-  <em>
   <strong>¿Quiere obtener más información y seguir interactuando con The Carpentries? Carpentries Clippings es el boletín quincenal de The Carpentries, donde compartimos noticias de la comunidad, ofertas de trabajo de la comunidad y más. Regístrese para recibir ediciones futuras y leer nuestro archivo completo:: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
-  </em>
 </p>
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
@@ -150,12 +148,14 @@ Modify the block below if there are any special requirements.
     Participants must bring a laptop with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% else %}
-    Los participantes deben tener acceso a una computadora con <\br>
-    - Sistema operativo Mac, Linux o Windows (no una tableta, Chromebook, etc.) con privilegios de administracion. <\br> 
-    - También es recomendable una velocidad de conexion a internet de al menos 3M  (esto lo puede verificar en https://www.speedtest.net/ ) <\br>
-    - zoom para las videoconferencias,  con su nombre completo definido como usuario al momento de conectarse a la sesión <\br>
+    Los participantes deben tener acceso a una computadora con 
+  <ul>
+    <li> Sistema operativo Mac, Linux o Windows (no una tableta, Chromebook, etc.) con privilegios de administracion. </li>
+    <li> También es recomendable una velocidad de conexion a internet de al menos 3M  (esto lo puede verificar en https://www.speedtest.net/ ) </li>
+    <li>  zoom para las videoconferencias,  con su nombre completo definido como usuario al momento de conectarse a la sesión </li>
   {% endif %}
-    - Deben tener ademas, acceso a una terminal y tener instalado python y como sugerencia visual code (instrucciones  <a href="#setup">abajo</a>).
+    <li>  Deben tener ademas, acceso a una terminal y tener instalado python y como sugerencia visual code (instrucciones  <a href="#setup">abajo</a>).</li>
+  </ul>
 </p>
 
 {% comment %}
@@ -183,13 +183,14 @@ special instructions.
   attempt to provide them.
 </p>
 {% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. 
-  We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
-  However, we do want to help create an inclusive, accessible experience for all participants. 
-  We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
-  To request an accommodation for this workshop, please fill out the 
-  <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
-  If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
+ Estamos dedicados a proporcionar un ambiente de aprendizaje positivo y accesible para todos.
+  No requerimos que los participantes proporcionen documentación de discapacidades ni revelen información personal innecesaria.
+  Sin embargo, queremos ayudar a crear una experiencia inclusiva y accesible para todos los participantes.
+  Le animamos a compartir cualquier información que pueda resultar útil para que su experiencia en Carpentries sea accesible.
+  Para solicitar una adaptación para este taller, complete el formulario
+  <a href="https://carpentries.typeform.com/to/B2OSYaD0">formulario de solicitud de alojamiento</a>.
+  Si tiene preguntas o necesita ayuda con el formulario de alojamiento, <a href="mailto:team@carpentries.org">envíenos un correo electrónico</a>.
+  
 </p>
 {% endif %}
 
@@ -218,11 +219,6 @@ Display the contact email address set in the configuration file.
   for more information.
 </p>
 
-<p id="roles">
-  <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
-</p>
 
 {% comment %}
 WHO CAN ATTEND?
@@ -239,26 +235,31 @@ Edit the text to match who can attend the workshop. For instance:
 - If you are interested in attending this workshop, contact me@example.com
   for more information
 
-<p id="who-can-attend">
-    <strong>Who can attend?:</strong>
-    This workshop is open to ....
-</p>
+
 {% endcomment %}
+<p id="who-can-attend">
+    <strong>¿Quien puede asistir?:</strong>
+    Este taller esta abierto al publico en general.  Las solicitudes de inscripción se realizan llenado el siguiente formnulario   La demanda al taller es muuy alta.  Si por alguna razón te inscribiste y no puedes asistir,  notificano,  para poder dar cabida a las personas en la lista de espera. 
+  <a href="https://forms.gle/bcZ2KYfmyJGvSqLt5">Solicitud de inscripción</a>
+</p>
+
 
 <hr/>
 
 {% comment%}
 CODE OF CONDUCT
 {% endcomment %}
-<h2 id="code-of-conduct">Code of Conduct</h2>
+<h2 id="code-of-conduct">Codigo de conducta</h2>
 
 <p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+Todos los que participan en las actividades de Carpentries deben cumplir con el <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Código de conducta</a>. Este documento también describe cómo informar un incidente si es necesario.
+
+Puedes revisar una version en español <a href="https://docs.google.com/document/d/e/2PACX-1vSwx_v2TUd03AJjDCIyazmsrbujFytGU4i5zCtFugIiA8negAbsLeXJug_ZuN8_8UK0VRlszxhN2MQv/pub">aquí<a>
 </p>
 
 <p class="text-center">
   <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+    <button type="button" class="btn btn-info">Reporta un incidente de Codigo de Conducta</button>
   </a>
 </p>
 <hr/>
