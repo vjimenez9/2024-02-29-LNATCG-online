@@ -14,7 +14,7 @@ humantime: "9:00 am - 6:30 pm UTC-6"    # human-readable times for the workshop 
 startdate: 2024-02-29      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2024-03-1        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Alejandro Sánchez", "Jérôme Verleyen", "Karel J. Estrada", "Leslie Matias", "Verónica Jiménez"] 
-helper: ["Karina Verdel Aranda", "Gabriel Alarcon Carranza", "Sonia Dávila Ramos"]     
+helper: ["Karina Verdel Aranda", "Gabriel Alarcon Carranza", "Sonia Dávila Ramos",Ilse Salinas, Ernestina Godoy,Heladia Salgando,Mayra Fragoso Medina]     
 email: ["uusmb@ibt.unam.mx"]    
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:   # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
